@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LMS Saya - Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+    <nav class="bg-blue-600 p-4 text-white shadow-lg">
+        <div class="container mx-auto flex justify-between">
+            <h1 class="text-xl font-bold">Akademi Digital</h1>
+            <div class="space-x-4">
+                <a href="#" class="hover:underline">Kelas Saya</a>
+                <a href="#" class="hover:underline">Profil</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto mt-10 p-4">
+        <h2 class="text-2xl font-bold mb-6 text-gray-800">Kursus Tersedia</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200">
+                <div class="h-40 bg-blue-200 flex items-center justify-center text-blue-500 font-bold">Gambar Kursus</div>
+                <div class="p-4">
+                    <h3 class="font-bold text-lg text-blue-600">Dasar Pemrograman Web</h3>
+                    <p class="text-gray-600 text-sm mt-2">Belajar HTML, CSS, dan JS dari nol untuk pemula.</p>
+                    <button class="mt-4 w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">Mulai Belajar</button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200">
+                <div class="h-40 bg-green-200 flex items-center justify-center text-green-500 font-bold">Gambar Kursus</div>
+                <div class="p-4">
+                    <h3 class="font-bold text-lg text-green-600">Desain Grafis Dasar</h3>
+                    <p class="text-gray-600 text-sm mt-2">Tutorial praktis desain menggunakan Canva dan Figma.</p>
+                    <button class="mt-4 w-full bg-green-600 text-white py-2 rounded hover:bg-green-700">Mulai Belajar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruang Sastra - Materi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:italic,wght@0,400;0,700;1,400&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .sastra-font { font-family: 'Lora', serif; }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-800">
+
+    <header class="bg-white border-b border-stone-200 p-4 sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl font-serif font-bold text-orange-800">Ruang Sastra Indonesia</h1>
+            <a href="index.html" class="text-sm text-stone-500 hover:text-orange-700">← Kembali ke Daftar Kelas</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto mt-8 p-4 lg:flex gap-8">
+        <div class="lg:w-2/3">
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-stone-200">
+                <span class="text-orange-600 font-semibold text-sm uppercase tracking-widest">Modul 1: Puisi Modern</span>
+                <h2 class="text-3xl font-serif font-bold mt-2 mb-6 text-stone-900">Menganalisis Makna "Aku" Karya Chairil Anwar</h2>
+                
+                <div class="bg-orange-50 p-4 rounded-lg mb-6 flex items-center gap-4 border border-orange-100">
+                    <span class="text-2xl">🎧</span>
+                    <div class="flex-1">
+                        <p class="text-sm font-semibold">Dengarkan Pembacaan Puisi</p>
+                        <audio controls class="w-full h-8 mt-2">
+                            <source src="link-audio-anda.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+
+                <div class="sastra-font text-lg leading-relaxed italic border-l-4 border-orange-200 pl-6 my-8 text-stone-700">
+                    "Kalau sampai waktunya<br>
+                    'Mau ku tak seorang 'kan merayu<br>
+                    Tidak juga kau..."
+                </div>
+
+                <div class="prose max-w-none text-stone-600">
+                    <p>Setelah membaca dan mendengarkan, perhatikan pemilihan dikata (diksi) yang digunakan oleh Chairil Anwar...</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="lg:w-1/3 mt-8 lg:mt-0">
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-stone-200 sticky top-24">
+                <h3 class="font-bold text-lg mb-4 flex items-center gap-2">
+                    <span>💬</span> Forum Diskusi
+                </h3>
+                <div class="space-y-4 mb-6 max-h-64 overflow-y-auto">
+                    <div class="bg-stone-50 p-3 rounded-lg text-sm">
+                        <p class="font-bold text-orange-800">Budi</p>
+                        <p>Menurut saya, kata 'Aku' di sini melambangkan semangat kebebasan.</p>
+                    </div>
+                </div>
+                <textarea class="w-full p-3 border border-stone-200 rounded-lg text-sm focus:ring-2 focus:ring-orange-500 outline-none" placeholder="Tuliskan pendapatmu..."></textarea>
+                <button class="w-full mt-3 bg-orange-700 text-white py-2 rounded-lg hover:bg-orange-800 transition">Kirim Jawaban</button>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
